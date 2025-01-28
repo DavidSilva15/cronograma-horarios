@@ -1,0 +1,13 @@
+CREATE DATABASE crud_db;
+
+USE crud_db;
+
+CREATE TABLE tasks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tema VARCHAR(255) NOT NULL,
+    data DATE NOT NULL,
+    dia VARCHAR(255) NOT NULL,
+    horario TIME NOT NULL,
+    assunto TEXT NOT NULL,
+    status ENUM('Pendente', 'Concluída') DEFAULT 'Pendente'
+);
